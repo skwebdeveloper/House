@@ -1,1 +1,127 @@
-<h1>Sauarbh</h1>
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <style>
+.heading-primary-main{
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        padding:60px 100px;
+        text-align:center;
+        letter-spacing: 35px;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        -webkit-clip-path: polygon(30% 0, 73% 0, 100% 100%, 0 100%);
+        clip-path: polygon(30% 0, 73% 0, 100% 100%, 0 100%);
+        background-color: aqua;
+        height:100%;
+        width:50%;
+        margin:6rem;
+       perspective:1500px;
+    }
+    @keyframes moveInLeft{
+        0%{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+      20%{
+        opacity: 0.3;
+            transform: translateX(-50px);
+      }
+        80%{
+            opacity: 0.4;
+            transform: translateX(5px);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+/* For Blocks */
+@keyframes moveInUp{
+           0%{
+            opacity: 0.2;
+            transform:translateY(-200px);
+        }
+      20%{
+        opacity: 0.3;
+            transform: translateY(50px);
+      }
+        80%{
+            opacity: 0.4;
+            transform: translateY(20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }   
+/*For corner */
+@keyframes moveInCorner{
+           0%{
+            opacity: 0.2;
+            transform:translateY(-50px);
+        }
+      20%{
+        opacity: 0.3;
+            transform: translateY(-100px);
+      }
+  80%{
+           opacity: 0.3;                                              transform: translateY(-300px);
+  }
+  100%{
+           opacity: 0.3;                                              transform: translateY(0px);
+  }
+    }   
+.heading-primary-sub{
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        padding:60px 100px;
+        text-align:center;
+        letter-spacing: 35px;
+        animation-name: moveInUp;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+     -webkit-clip-path: inset(24% 0 41% 0);
+clip-path: inset(24% 0 41% 0);
+        background-color: aqua;
+        height:100%;
+        width:50%;
+        margin:6rem;
+       perspective:1500px;
+    }
+
+
+.heading-primary-sub1{
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        padding:60px 100px;
+        text-align:center;
+        letter-spacing: 35px;
+        animation-name: moveInCorner;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+     -webkit-clip-path: polygon(35% 24%, 35% 24%, 35% 0%, 65% 0%, 65% 25%, 65% 25%, 65% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 35% 50%);
+clip-path: polygon(35% 24%, 35% 24%, 35% 0%, 65% 0%, 65% 25%, 65% 25%, 65% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 35% 50%);
+        background-color: aqua;
+        height:100%;
+        width:50%;
+        margin:6rem;
+       perspective:1500px;
+    }      
+      
+      
+  </style>
+  <body>
+   <h1 class="heading-primary">
+        <span class="heading-primary-main">ADVENTURE</span>
+        <span class="heading-primary-sub"></span>
+     <span class="heading-primary-sub1"></span>
+     <span class="heading-primary-sub"></span>
+    </h1>
+  </body>
+</html>
