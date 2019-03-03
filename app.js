@@ -1,17 +1,14 @@
-var express= require("express");
+var express = require("express");
 var app = express();
 
-app.get("/",function(res,req){
-   console.log("Active");
-   res.render("animation.ejs");
+app.get("/",function(req,res){
+   console.log("Someone is filling data!");
+   res.render("animation.ejs"); 
 });
 
-app.get("*",function(res,req){
-   res.send("<h1>Darling saurabh is working on it.</h1>"); 
+app.get("*",function(req,res){
+   res.send("<h1>Page May Be Gone Now Please Wait For Saurabh To Correct It!!</h1>");
 });
-
-app.listen(process.env.PORT,process.env.ID,function(){
-   console.log("Working server"); 
+app.listen(process.env.PORT,process.env.IP,function(){
+   console.log("Server begin now!"); 
 });
-
-
