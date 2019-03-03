@@ -1,0 +1,23 @@
+{
+  "name": "saurabh",
+  "version": "1.0.0",
+  "description": "Animation house",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skwebdeveloper/House.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skwebdeveloper/House/issues"
+  },
+  "homepage": "https://github.com/skwebdeveloper/House#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
